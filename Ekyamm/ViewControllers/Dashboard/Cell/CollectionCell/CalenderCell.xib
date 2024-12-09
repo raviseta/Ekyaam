@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CalenderCell" id="gTV-IL-0wX" customClass="CalenderCell" customModule="Ekyamm" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="336" height="147"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="336" height="147"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rk4-KB-UOI">
+                        <rect key="frame" x="5" y="5" width="326" height="137"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="kuR-FB-qRP">
+                                <rect key="frame" x="0.0" y="10" width="326" height="117"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g1G-Ak-Vlo">
+                                        <rect key="frame" x="144.33333333333334" y="0.0" width="37.333333333333343" height="58.666666666666664"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6f2-Ow-blH">
+                                        <rect key="frame" x="142.66666666666666" y="58.666666666666671" width="40.666666666666657" height="58.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="kuR-FB-qRP" firstAttribute="leading" secondItem="rk4-KB-UOI" secondAttribute="leading" id="GQS-Ab-2uY"/>
+                            <constraint firstAttribute="trailing" secondItem="kuR-FB-qRP" secondAttribute="trailing" id="O5E-84-PUB"/>
+                            <constraint firstItem="kuR-FB-qRP" firstAttribute="centerX" secondItem="rk4-KB-UOI" secondAttribute="centerX" id="P4J-ud-QWJ"/>
+                            <constraint firstItem="kuR-FB-qRP" firstAttribute="top" secondItem="rk4-KB-UOI" secondAttribute="top" constant="10" id="b8N-3A-e1D"/>
+                            <constraint firstItem="kuR-FB-qRP" firstAttribute="centerY" secondItem="rk4-KB-UOI" secondAttribute="centerY" id="ykZ-it-rPO"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="rk4-KB-UOI" secondAttribute="bottom" constant="5" id="ElP-ST-5Ao"/>
+                <constraint firstItem="rk4-KB-UOI" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="Xov-Wb-3mX"/>
+                <constraint firstItem="rk4-KB-UOI" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="Y8R-71-QA1"/>
+                <constraint firstAttribute="trailing" secondItem="rk4-KB-UOI" secondAttribute="trailing" constant="5" id="ayd-ey-5u4"/>
+            </constraints>
+            <size key="customSize" width="336" height="147"/>
+            <connections>
+                <outlet property="lblDate" destination="6f2-Ow-blH" id="AmM-uj-l3s"/>
+                <outlet property="lblDay" destination="g1G-Ak-Vlo" id="eoi-vM-cnJ"/>
+                <outlet property="selectedView" destination="rk4-KB-UOI" id="ldl-Kj-Fxl"/>
+            </connections>
+            <point key="canvasLocation" x="254.96183206106869" y="53.87323943661972"/>
+        </collectionViewCell>
+    </objects>
+</document>
